@@ -40,8 +40,8 @@
                 <div class="forum-question-stats">
                     <span class="forum-views-count">
                         <strong><?php echo $row['Views'] ?></strong>Views</span>
-                    <span class="forum-answers-count">
-                        <strong>2</strong>Thích </span>
+                    <!-- <span class="forum-answers-count">
+                        <strong>2</strong>Thích </span> -->
                     <span class="forum-votes-count">
                         <strong>0</strong>Trả lời </span>
                 </div>

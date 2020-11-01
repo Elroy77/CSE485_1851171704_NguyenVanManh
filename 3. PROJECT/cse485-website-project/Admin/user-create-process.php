@@ -4,7 +4,7 @@
     $password = $_POST['password'];
     $status = $_POST['status'];
     $optionsRole = $_POST['optionsRole'];
-    $target = "Assets/images/".basename($_FILES['image']['name']);
+    $target = "../Assets/images/".basename($_FILES['image']['name']);
     $image = $_FILES['image']['name'];
     move_uploaded_file($_FILES['image']['tmp_name'], $target);
 	{

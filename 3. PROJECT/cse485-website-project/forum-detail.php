@@ -70,32 +70,17 @@
                                 <div class="card-header">
                                     <h4>Viết bình luận ...</h4>
                                 </div>
-                                <form class="card-body">
+                                <form class="card-body" action="comment-process.php" method="POST">
+                                <input type="hidden" name="username" value= "<?php echo $_SESSION['username'] ?>"> 
+                                <input type="hidden" name="id" value= "<?php echo $_GET['id']; ?>"> 
                                     <div class="form-group">
-                                        <textarea class="form-control" rows="3" placeholder="bình luận"></textarea>
+                                        <textarea class="form-control" rows="3" placeholder="bình luận" name="comment"></textarea>
                                     </div>
                                     <button type="submit" class="btn btn-primary">Gửi</button>
                                 </form>
                             </div>
                             <?php } ?>
-                            <div class="forum-answers">
-                                <div class="forum-answers-title">
-                                    <h5>1 Answers</h5>
-                                </div>
-                                <div class="forum-answers-list">
-                                    <div class="forum-answer-item">
-                                        <div class="forum-answer-meta">
-                                            <span><a href="#"><img alt="" src="images/dw-avatar2.png"
-                                                        class="avatar avatar-48 photo" height="48"
-                                                        width="48">AazzTech</a> answered 2 years ago</span>
-                                        </div>
-                                        <div class="forum-answer-content">
-                                            <p>Hi Josh,
-                                                <br> lấy ID bài viết và tất cả comment của bài viết đó ra đây&nbsp;</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <?php include 'comment-index-process.php'; ?>
                         </div>
                     </div>
                 </div>
