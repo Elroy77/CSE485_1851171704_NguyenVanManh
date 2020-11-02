@@ -1729,7 +1729,7 @@ offcanvas-menu::-webkit-scrollbar-thumb {
     background-image: -o-linear-gradient(right,#1dc9b7 0,#0000FF 100%);
     background-image: linear-gradient(to left,#1dc9b7 0,#0000FF 100%);
     background-color: #1dc9b7;
-    background: #0000FF;
+    background: #2586ed;
     background-image: -webkit-gradient(linear,left top,right top,from(#1dc9b7),to(#0000FF));
     background-image: -webkit-linear-gradient(left,#1dc9b7,#0000FF);
     background-image: -o-linear-gradient(left,#1dc9b7,#0000FF);

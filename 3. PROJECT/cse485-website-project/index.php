@@ -91,7 +91,7 @@
                         <div class="col-md-4">
                             <div class="sidebar-card card--forum_categories">
                                 <div class="card-title">
-                                    <h4>Chuyên mục</h4>
+                                    <h4>Tin mới nhất</h4>
                                 </div>
                                 <div class="collapsible-content">
                                     <div class="news-right">
@@ -146,9 +146,9 @@
                 </div>
             </div>
         </div>
-        <?php include 'layouts/go-top.php'; ?>
-
-
+    </div>
+    <?php include 'layouts/footer.php'; ?>
+    <?php include 'layouts/go-top.php'; ?>
 </body>
 
 </html>

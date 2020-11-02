@@ -1,14 +1,15 @@
 <div class="forum-answers">
     <?php
-
     ?>
     <div class="forum-answers-title">
     <?php 
-    $sqlgetcountComment = "SELECT COUNT(Comment_ID) as count_comment FROM `comments`,questions WHERE comments.Question_ID =".$_GET['id'];
+    $sqlgetcountComment = "SELECT COUNT(Question_ID) as count_comment 
+    FROM comments,questions WHERE comments.Question_ID = questions.ID and Question_ID =".$_GET['id'];
+    
     $resultcountComment = mysqli_query($conn,$sqlgetcountComment);
     $row = mysqli_fetch_assoc($resultcountComment)
     ?>
-        <h5>Câu trả lời</h5>
+        <h5>Có <?php echo $row['count_comment']; ?> câu trả lời</h5>
     </div>
     <div class="forum-answers-list">
     <?php

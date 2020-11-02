@@ -28,8 +28,8 @@
                     <span title="Open" class="forum-status forum-status-open">Open</span>
                     <span>
                         <a href="#">
-                            <img alt="" src="images/support_avat1.png"
-                                class="avatar avatar-48 photo avatar-default"><?php echo $row['UserName'] ?></a> Câu hỏi từ <?php echo $row['Created'] ?>
+                            <img alt="" src="Assets/images/nvm.error.jpg" style="width:30px;"
+                                class="avatar avatar-48 photo avatar-default"> <?php echo $row['UserName'] ?></a> Câu hỏi từ <?php echo $row['Created'] ?>
                     </span>
                 </div>
                 <div class="forum-question-meta mt-3">
@@ -40,10 +40,15 @@
                 <div class="forum-question-stats">
                     <span class="forum-views-count">
                         <strong><?php echo $row['Views'] ?></strong>Views</span>
-                    <!-- <span class="forum-answers-count">
-                        <strong>2</strong>Thích </span> -->
                     <span class="forum-votes-count">
-                        <strong>0</strong>Trả lời </span>
+                    <?php 
+                        $sqlgetcountComment = "SELECT COUNT(Question_ID) as count_comment 
+                        FROM comments,questions WHERE comments.Question_ID = questions.ID and Question_ID = ".$row['ID'];
+                        
+                        $resultcountComment = mysqli_query($conn,$sqlgetcountComment);
+                        $row = mysqli_fetch_assoc($resultcountComment)
+                    ?>
+                        <strong><?php echo $row['count_comment']; ?></strong>Trả lời </span>
                 </div>
             </div>
         </div>
