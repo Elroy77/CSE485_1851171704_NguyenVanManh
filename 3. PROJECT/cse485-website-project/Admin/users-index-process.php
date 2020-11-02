@@ -27,9 +27,10 @@
             <td><?php echo $row['Role'] ?></td>
             <td><?php echo $row['Created_date'] ?></td>
             <td><?php if ($row['Updated'] != null) echo $row['Updated'] ?></td>
-            <td><img src="Assets/Images/<?php echo $row['Image'] ?>" alt=""></td>
+            <td><img src="Assets/images/<?php echo $row['Image'] ?>" alt="" style="height:40px;"></td>
             <td><a href="user-edit.php?id=<?php echo $row['ID'] ?>" name="ID" class="fa fa-edit"></a></td>
-            <td><p class="fa fa-trash-o" style="color:#428bca; cursor: pointer" onClick="deleteUser(<?php echo $row['ID']; ?>)"></p></td>
+            <td class="text-center"><a class="fas fa-trash-alt" style="color:red;" onClick="deleteUser(<?php echo $row['ID']; ?>)"></a></td>
+
             <script>
                 function deleteUser(delid)
                 {

@@ -30,7 +30,9 @@
             <td><?php echo $row['Updated'] ?></td>
             <td><?php echo $row['link'] ?></td>
             <td><a href="post-edit.php?id=<?php echo $row['ID'] ?>" name="ID" class="fa fa-edit"></a></td>
-            <td><p class="fa fa-trash-o" style="color:#428bca; cursor: pointer" onClick="deletePost(<?php echo $row['ID']; ?>)"></p></td>
+            <td class="text-center"><a class="fas fa-trash-alt" style="color:red;" onClick="deletePost(<?php echo $row['ID']; ?>)"></a></td>
+
+
             <script>
                 function deletePost(delid)
                 {

@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $(window).scroll(function () { 
-        var viTri =$('html,body').scrollTop();
+        let viTri =$('html,body').scrollTop();
         if(viTri >= 200 ){
             $('nav').addClass('cuon-xuong');   
         } else{
@@ -11,7 +11,6 @@ $(document).ready(function () {
         e.preventDefault()
         $('html,body').animate({ scrollTop:0 + 'px'},500)
     });
-
     $("#register").validate({
         rules: {
             name: "required",
@@ -61,4 +60,5 @@ $(document).ready(function () {
             },
         }
     })
+    console.log('hello word');
 })

@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php include 'layouts/css-link-forum.php'; ?>
+<?php include './Layouts/css-link.php'; ?>
 
 <body>
     
-<?php include 'layouts/header.php'; ?>
+<?php include './Layouts/header.php'; ?>
 
-<?php include 'layouts/title-forum.php'; ?>
+<?php include './Layouts/title-forum.php'; ?>
 
     <section class="support_threads_area section--padding">
-        <div class="container">
+        <div class="container mt-3">
             <div class="row">
                 <div class="col-lg-8">
                     <div class="forum-container">
@@ -56,16 +56,16 @@
                         <a href="forum-question-form.php" class="login_promot ">đăng câu hỏi</a>
                         <?php } ?>
 
-                        <?php include 'layouts/menu-right.php'; ?>
+                        <?php include './Layouts/menu-right.php'; ?>
                     </aside>
                 </div>
             </div>
         </div>
     </section>
 
-    <?php include 'layouts/go-top.php'; ?>
+    <?php include './Layouts/go-top.php'; ?>
 
-    <?php include 'layouts/footer.php'; ?>
+    <?php include './Layouts/footer.php'; ?>
 
 </body>
 
