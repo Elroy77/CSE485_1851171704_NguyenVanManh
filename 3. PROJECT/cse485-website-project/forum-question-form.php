@@ -59,10 +59,9 @@
                         </form>
                     </div>
                 </div>
-
                 <div class="col-lg-3">
                     <aside class="sidebar support--sidebar">
-                        <a href="https://www.facebook.com/daihocthuyloi1959" class="login_promot">Hỗ trợ từ fanpage</a>
+                        <a href="https://www.facebook.com/daihocthuyloi1959" class="login_promot" style="margin-top:20px;">Hỗ trợ từ fanpage</a>
 
                         <?php include 'Layouts/menu-right.php'; ?>
                     </aside>

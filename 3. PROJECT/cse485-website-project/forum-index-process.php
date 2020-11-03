@@ -28,7 +28,12 @@
                     <span title="Open" class="forum-status forum-status-open">Open</span>
                     <span>
                         <a href="#">
-                            <img alt="" src="Assets/images/nvm.error.jpg" style="width:30px;"
+                        <?php
+                            $sqlgetImage = "select users.Image from users,questions where users.Username = 'Admin'";
+                            $resultImage = mysqli_query($conn,$sqlgetImage); 
+                            $rowImage = mysqli_fetch_assoc($resultresultImage)
+                        ?>
+                            <img alt="" src="Admin/Assets/images/<?php echo $rowImage['Image'] ?>" style="width:30px;border-radius:30px;"
                                 class="avatar avatar-48 photo avatar-default"> <?php echo $row['UserName'] ?></a> Câu hỏi từ <?php echo $row['Created'] ?>
                     </span>
                 </div>

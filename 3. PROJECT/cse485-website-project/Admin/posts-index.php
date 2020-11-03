@@ -15,7 +15,7 @@ if (!isset($_SESSION['username'])) {
     <section class="container-fluid">
         <div class="row">
             <div class="col-lg-12 mt-2">
-                <h1 class="page-header text-center">Quản lý bài viết</h1>
+                <h1 class="page-header text-center" style="margin-top:20px;">Quản lý bài viết</h1>
             </div>
         </div>
         <div class="row">

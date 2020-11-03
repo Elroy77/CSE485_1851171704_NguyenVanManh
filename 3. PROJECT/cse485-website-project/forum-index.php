@@ -31,7 +31,7 @@
                                 </select>
                             </div>
                             <div class="forum-question-filter shadow p-3 mb-3  rounded"
-                                style="background-color: #0000ff; color: white;">
+                                style="background-color: #3399FF; color: white;">
                                 <span>Danh sách các câu hỏi</span>
                             </div>
                             <?php include 'forum-index-process.php'; ?>

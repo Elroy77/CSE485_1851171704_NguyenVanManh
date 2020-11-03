@@ -23,7 +23,7 @@
             <script>
                 function deleteCategory(delid)
                 {
-                    if (confirm("Bạn có chắc chắn muốn xóa người dùng?"))
+                    if (confirm("Bạn có chắc chắn muốn xóa thể loại này?"))
                     {
                         window.location.href='category-post-delete.php?del_id='+delid+'';
                         return true; 

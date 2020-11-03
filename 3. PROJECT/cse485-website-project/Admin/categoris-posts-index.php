@@ -4,7 +4,7 @@
 <?php include '../Layouts/css-link.php'; ?>
 <?php
 include 'Config/config.php';
-if (!isset($_SESSION['username'])) {
+if (!isset($_SESSION['username']) && $_SESSION['username'] == 'admin') {
     header('location:../Login.php');
 }
 ?>
@@ -15,7 +15,7 @@ if (!isset($_SESSION['username'])) {
     <section class="container-fluid">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header text-center">Quản lý thể loại bài viết</h1>
+                <h1 class="page-header text-center" style="margin-top:20px;">Quản lý thể loại bài viết</h1>
             </div>
         </div>
         <div class="row">

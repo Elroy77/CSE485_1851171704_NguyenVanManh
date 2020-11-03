@@ -1,5 +1,5 @@
 <?php
-    $categoryName = $_POST['CategoryName'];
+    $categoryName = $_POST['categoryName'];
 	{
         include 'Config/config.php';
 		$sql = "select * from categoris where CategoryName = '$categoryName'";

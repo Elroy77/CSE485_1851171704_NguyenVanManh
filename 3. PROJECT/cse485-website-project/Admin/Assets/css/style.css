@@ -10736,7 +10736,7 @@ span.slick-next {
 .login, .recover_pass, .signup_form {
     background-color: white;
     opacity: 0.8;
-    margin: 70px 0;
+    margin: 30px 0;
     padding: 45px 0 43px;
     border-radius: 10%;
 }
