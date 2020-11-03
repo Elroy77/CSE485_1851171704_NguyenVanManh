@@ -58,62 +58,15 @@
 
                                 <div class="col-md-7">
                                     <h3>Sinh viên Khoa CNTT giao lưu với công ty Qualica Nhật Bản</h3>
-                                    <p style="overflow-x:hidden">Chiều 23/04/2018, tại Trường Đại học Thủy lợi diễn
+                                    <p class="tieude">Chiều 23/04/2018, tại Trường Đại học Thủy lợi diễn
                                         ra buổi giao lưu giữa sinh viên Khoa CNTT với các lãnh đạo...</p>
-                                    <a class="btn btn-primary" href="detail.php">Xem thêm<span class="glyphicon glyphicon-chevron-right"></span></a>
+                                    <a href="detail.php">Xem thêm >></a>
                                 </div>
+                                <hr/>  
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="sidebar-card card--forum_categories">
-                                <div class="card-title">
-                                    <h4>Tin mới nhất</h4>
-                                </div>
-                                <div class="collapsible-content">
-                                    <div class="news-right">
-                                        <img class="img-thumbnail" src="Assets/images/1.jpg" height="50" width="150" alt="">
-                                        <a href="detail.html"><span>Lorem ipsum dolor sit amet, consectetur adipisicing
-                                                elit.</span></a>
-                                    </div>
-                                    <div class="news-right">
-                                        <img class="img-thumbnail" src="Assets/images/1.jpg" height="50" width="150" alt="">
-                                        <a href="detail.html"><span>Lorem ipsum dolor sit amet, consectetur adipisicing
-                                                elit.</span></a>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="sidebar-card card--forum_categories">
-                                <div class="card-title">
-                                    <h4>Chuyên mục</h4>
-                                </div>
-                                <div class="collapsible-content">
-                                    <ul class="card-content">
-                                        <li>
-                                            <a href="#">
-                                                Wordpress
-                                                <span class="item-count">35</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="sidebar-card card--top_discussion">
-                                <div class="card-title">
-                                    <h4>Popular Questions</h4>
-                                </div>
-                                <div class="collapsible-content">
-                                    <ul class="card-content">
-                                        <li>
-                                            <a href="#">How can I delete more than one post at a time?
-                                                <span>2 Weeks Ago</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+                            <?php include 'Layouts/menu-right-index.php'; ?>
                         </div>
                     </div>
 
@@ -121,8 +74,8 @@
             </div>
         </div>
     </div>
-    <?php include 'Layouts/footer.php'; ?>
     <?php include 'Layouts/go-top.php'; ?>
+    <?php include 'Layouts/footer.php'; ?>
 </body>
 
 </html>

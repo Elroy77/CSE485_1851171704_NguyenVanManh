@@ -22,13 +22,18 @@
         <div class="forum-questions-list shadow p-3 mb-3 bg-white rounded">
             <div class="forum-question-item">
                 <div class="forum-question-title">
-                    <a href="forum-detail.php?id=<?php echo $row['ID']; ?>" name="title" id="title"><?php echo $row['Title'] ?></a>
+                    <a href="forum-detail.php?id=<?php echo $row['ID']; ?>" name="title" class="tieude" id="title"><?php echo $row['Title'] ?></a>
                 </div>
                 <div class="forum-question-meta">
                     <span title="Open" class="forum-status forum-status-open">Open</span>
                     <span>
                         <a href="#">
-                            <img alt="" src="Assets/images/nvm.error.jpg" style="width:30px;"
+                        <?php
+                            $sqlgetImage = "select users.Image from users,questions where users.Username = 'Admin'";
+                            $resultImage = mysqli_query($conn,$sqlgetImage); 
+                            $rowImage = mysqli_fetch_assoc($resultresultImage)
+                        ?>
+                            <img alt="" src="Admin/Assets/images/<?php echo $rowImage['Image'] ?>" style="width:30px;border-radius:30px;"
                                 class="avatar avatar-48 photo avatar-default"> <?php echo $row['UserName'] ?></a> Câu hỏi từ <?php echo $row['Created'] ?>
                     </span>
                 </div>

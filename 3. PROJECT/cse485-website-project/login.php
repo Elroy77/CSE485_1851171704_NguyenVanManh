@@ -30,7 +30,7 @@
 
                                 <div class="login_assist">
                                     <p class="signup" style="margin-left:20px;"> Chưa có tài khoản ?
-                                    <a href="register.html">Đăng ký</a></p>
+                                    <a href="register.php">Đăng ký</a></p>
                                 </div>
                             </div>
                         </div>

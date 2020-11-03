@@ -28,9 +28,15 @@ if (!isset($_SESSION['username'])) {
                     <div class="form-group">
                         <label>Category</label>
                         <select name="category" id="category" class="form-control">
-                            <option value="1">1</option>
-                            <option value="Category 1">Category 1</option>
-                            <option value="Category 2">Category 2</option>
+                            <option value="0">-- Lựa chọn --</option>
+                            <?php
+                                $sql = "SELECT * FROM categoris";
+                                mysqli_set_charset($conn, "UTF8");
+                                $result = mysqli_query($conn, $sql);
+                                while ($row = mysqli_fetch_array($result)) { ?>
+                            <option value="<?php echo $row['ID'] ?>"> <?php echo $row['CategoryName'] ?> </option>
+                            <?php }
+                            ?>
                         </select>
                     </div>
                     <div class="form-group">

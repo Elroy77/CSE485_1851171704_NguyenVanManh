@@ -16,7 +16,13 @@
         <tr>
             <td><?php echo $row['ID'] ?></td>
             <td><?php echo $row['Title'] ?></td>
-            <td><?php echo $row['Category'] ?></td>
+            <td>
+            <?php
+                $sqlCategory = "SELECT CategoryName FROM categoris,posts where categoris.ID =".$row['CategoryID'];
+                mysqli_set_charset($conn, "UTF8");
+                $resultCategory = mysqli_query($conn, $sqlCategory);
+                $rowCategory = mysqli_fetch_array($resultCategory);
+                echo $rowCategory['CategoryName'] ?></td>
             <td><?php echo $row['Contents'] ?></td>
             <td></td>
             <td>

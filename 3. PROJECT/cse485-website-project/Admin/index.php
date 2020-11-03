@@ -3,8 +3,11 @@
 
 <?php include '../Layouts/css-link.php'; ?>
 <?php
-session_start();
-if (!isset($_SESSION['username'])) {
+include 'Config/config.php';
+$sql = "select * from users";
+$result = mysqli_query($conn,$sql);
+$row = mysqli_fetch_assoc($result);
+if (!isset($_SESSION['username']) && $row['Role'] == 'admin') {
     header('location:../Login.php');
 }
 ?>

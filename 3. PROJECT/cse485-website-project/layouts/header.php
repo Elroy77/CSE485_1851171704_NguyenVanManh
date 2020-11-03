@@ -25,17 +25,17 @@
                                     </button>
                                     <div class="nav">
                                         <ul class="navbar-nav">
-                                            <li class="">
-                                                <a href="index.php">Trang chủ</a>
+                                            <li class="nav-item active">
+                                                <a class="nav-link" href="index.php">Trang chủ</a>
                                             </li>
-                                            <li class="">
-                                                <a href="forum-index.php">Diễn dàn</a>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="forum-index.php">Diễn dàn</a>
                                             </li>
-                                            <li class="">
-                                                <a href="forum-index.php">Liên hệ</a>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Liên hệ</a>
                                             </li>
-                                            <li class="">
-                                                <a href="forum-index.php">Giới thiệu</a>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Giới thiệu</a>
                                             </li>
                                         </ul>
                                     </div>
