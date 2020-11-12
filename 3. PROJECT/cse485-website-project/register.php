@@ -8,7 +8,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 offset-lg-3">
-                    <form action="#" id="register">
+                    <form action="register-process.php" id="register" method="POST">
                         <div class="cardify login">
                             <div class="login--header">
                                 <h3>Tạo tài khoản</h3>
@@ -17,7 +17,7 @@
                             <div class="login--form">
                                 <div class="form-group">
                                     <label>Họ tên</label>
-                                    <input type="text" name="name" class="text_field" placeholder="Nhập họ và tên">
+                                    <input type="text" name="username" class="text_field" placeholder="Nhập họ và tên">
                                 </div>
                                 <div class="form-group">
                                     <label>Email</label>
@@ -50,6 +50,7 @@
             </div>
         </div>
     </section>
+    <?php include 'Layouts/footer.php'; ?>
 </body>
 
 </html>

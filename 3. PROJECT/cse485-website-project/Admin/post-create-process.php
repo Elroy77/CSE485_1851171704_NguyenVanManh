@@ -15,7 +15,7 @@
 			header("Location: post-create.php");
 		}
 		$sql = "INSERT INTO posts (Title, Contents, CategoryID , Image, Status,  Created)
-		VALUES('$title', '$contents','$category', '$image', '$status', NOW())";
+		VALUES('$title', '$Contents','$category', '$image', '$status', NOW())";
         if (mysqli_query($conn,$sql))
         {
             header('location:posts-index.php');

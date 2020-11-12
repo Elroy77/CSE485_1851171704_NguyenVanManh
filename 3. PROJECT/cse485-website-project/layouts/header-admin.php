@@ -33,7 +33,9 @@
                                             <li class="nav-item dropdown show">
                                                 <a class="nav-link  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown">Quản lý diễn đàn</a>
                                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                    <a class="dropdown-item" href="#" style="color: #3399FF; font-size: 16px; font-weight: 600;">Trang chủ</a>
+                                                    <a class="dropdown-item" href="posts-question-index.php" style="color: #3399FF; font-size: 16px; font-weight: 600;">Bài viết</a>
+                                                    <a class="dropdown-item" href="comments-index.php" style="color: #3399FF; font-size: 16px; font-weight: 600;">Bình luận</a>
+                                                    <a class="dropdown-item" href="questions-categoris-index.php" style="color: #3399FF; font-size: 16px; font-weight: 600;">Thể loại</a>
                                                 </div>
                                             </li>
                                        

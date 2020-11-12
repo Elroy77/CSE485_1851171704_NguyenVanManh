@@ -19,7 +19,7 @@
     $result = mysqli_query($conn,$sql);
     while($row = mysqli_fetch_assoc($result))
     {?>
-        <div class="noidung-index forum-questions-list shadow p-3 mb-3 bg-white rounded ">
+        <div class="forum-questions-list shadow p-3 mb-3 bg-white rounded">
             <div class="forum-question-item">
                 <div class="forum-question-title">
                     <a href="forum-detail.php?id=<?php echo $row['ID']; ?>" name="title" class="tieude" id="title"><?php echo $row['Title'] ?></a>
@@ -38,7 +38,9 @@
                     </span>
                 </div>
                 <div class="forum-question-meta mt-3">
+                    <a class="forum-keyword mb-2">Hỏi đáp</a>
                     <a class="forum-keyword">Sinh viên</a>
+                    <a class="forum-keyword">Hiệu xuất</a>
                 </div>
                 <div class="forum-question-stats">
                     <span class="forum-views-count">
