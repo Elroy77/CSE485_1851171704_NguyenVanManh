@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php include 'Layouts/css-link.php'; ?>
-
-
+<?php include 'Layouts/css-link.php';
+// if (!isset($_SESSION['username'])) {
+//     header('location:index.php');}
+?>
 <body>
     <section class="login_area section--padding">
         <div class="container">

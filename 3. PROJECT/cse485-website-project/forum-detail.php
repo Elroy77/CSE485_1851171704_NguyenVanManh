@@ -28,7 +28,7 @@
 
                                         ?>
                                         <a href="#">
-                                            <img alt="" src="" class="avatar avatar-48 photo"
+                                            <img alt="" src="Admin/Assets/images/user.jpg" class="avatar avatar-48 photo"
                                                 height="48" width="48"><?php echo $row['UserName'] ?><br></a> Câu hỏi từ <?php echo $row['Created'] ?></span>
                                     <span class="forum-question-actions"></span>
                                 </div>

@@ -53,7 +53,6 @@
                         </div>
                         <div class="col-md-4">
                             <?php include 'Layouts/menu-right-index.php'; ?>
-
                         </div>
                     </div>
 

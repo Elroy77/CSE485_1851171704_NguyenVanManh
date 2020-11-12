@@ -7,7 +7,7 @@
     {?>
     <div class="row" style="margin-bottom:10px;">
         <div class="col-md-5">
-            <a href="detail.php">
+            <a href="detail.php?id=<?php echo $row['ID'] ?>">
                 <img class="img-responsive" src="Admin/Assets/images/<?php echo $row['Image']?>" alt="" >
             </a>
         </div>

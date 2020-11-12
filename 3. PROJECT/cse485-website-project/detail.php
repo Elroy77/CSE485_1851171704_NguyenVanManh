@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <?php include 'Layouts/css-link.php'; ?>
-
 
 <body>
     <?php include './Layouts/header.php'; ?>
@@ -24,6 +22,7 @@
                 <hr>
 
                 <hr>
+                <h5 style="color:blue">link : <a href="<?php echo $row['Link']; ?>">tại đây</a></h5>
                 <div class="media">
                 
                     <div class="media-body">

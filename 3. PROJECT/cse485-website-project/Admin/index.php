@@ -21,7 +21,6 @@ if (!isset($_SESSION['username']) && $row['Role'] == 'admin') {
             </div>
         </div>
         <div class="row">
-            
         </div>
     </div>
 

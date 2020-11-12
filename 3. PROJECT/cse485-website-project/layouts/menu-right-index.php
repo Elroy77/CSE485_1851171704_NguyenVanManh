@@ -1,3 +1,11 @@
+<div class="sidebar-card card--top_discussion">
+    <div class="card-title">
+        <h4>Trang facebook</h4>
+    </div>
+    <div class="collapsible-content">
+            <a href="https://www.facebook.com/cse.tlu.edu.vn/"><img src="Assets/images/fb.jpg" alt=""></a>
+    </div>
+</div>
 <div class="sidebar-card card--forum_categories">
     <div class="card-title">
         <h4>Tin mới nhất</h4>
@@ -6,8 +14,6 @@
         <?php include 'newPosts-process.php'; ?>
     </div>
 </div>
-
-
 <div class="sidebar-card card--forum_categories">
     <div class="card-title">
         <h4>Chuyên mục</h4>
@@ -33,21 +39,5 @@
                 ?>
             </li>
         </ul>
-    </div>
-</div>
-
-<div class="sidebar-card card--top_discussion">
-    <div class="card-title">
-        <h4>PAGE FACEBOOK</h4>
-    </div>
-    <div class="collapsible-content">
-            <!-- <ul class="card-content">
-                <li>
-                    <a href="#">How can I delete more than one post at a time?
-                        <span>2 Weeks Ago</span>
-                    </a>
-                </li>
-            </ul> -->
-            <a href="https://www.facebook.com/cse.tlu.edu.vn/"><img src="Assets/images/page-facebook.jpg" alt=""></a>
     </div>
 </div>
