@@ -17,7 +17,7 @@
         $resultComment = mysqli_query($conn,$sqlgetComment);
         while($row = mysqli_fetch_assoc($resultComment))
         {?>
-        <div class="forum-answer-item  shadow p-3 mb-3 bg-white rounded noidung-index">
+        <div class="forum-answer-item">
             <div class="forum-answer-meta">
                 <span><a href="#"><!--<img alt="" src="images/dw-avatar2.png"
                             class="avatar avatar-48 photo" height="48"

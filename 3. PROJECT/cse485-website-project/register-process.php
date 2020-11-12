@@ -1,24 +1,23 @@
 <?php
     $errors = array(); 
-	$usernamesignup = trim($_POST['usernamesignup']);
-	if (empty($usernamesignup)) {
+	$username = trim($_POST['username']);
+	if (empty($username)) {
 		$errors[] = 'Please enter your user name.';
 	}
 
-	$emailsignup = trim($_POST['emailsignup']);
-	if (empty($emailsignup)) {
+	$email = trim($_POST['email']);
+	if (empty($email)) {
 		$errors[] = 'Please enter your email.';
 	}
 
-	$passwordsignup = trim($_POST['passwordsignup']);
-	if (empty($passwordsignup)) {
+	$password = trim($_POST['password']);
+	if (empty($password)) {
 		$errors[] = 'Please enter your password.';
 	}
 
-	$password = trim($_POST['passwordsignup']);
-	$password_comfirm = trim($_POST['passwordsignup_confirm']);
+	$comfirmPassword = trim($_POST['comfirmPassword']);
 	if (!empty($password)) {
-		if ($password !== $password_comfirm) { 
+		if ($password !== $comfirmPassword) { 
 			$errors[] = 'Your two password did not match.';
 		} 
 	} else {
@@ -27,17 +26,17 @@
 	if (empty($errors))
 	{
 		include 'Config/config.php';
-		$sql = "select * from users where Username = '$usernamesignup'";
+		$sql = "select * from users where Username = '$username'";
 		$result = mysqli_query($conn,$sql);
 		$num = mysqli_num_rows($result);
 		if ($num > 0)
 		{
-			header("Location: login-register.php#toregister");
+			header("Location: register.php");
 		}
 		$password_hash = password_hash($password, PASSWORD_DEFAULT);
 		$activation_code = substr(md5(uniqid(rand(), true)), 16, 16);
 		$sql = "INSERT INTO users (Username, Gmail, Password, Verification_Code , Created_date)
-		VALUES('$usernamesignup', '$emailsignup','$password_hash', '$activation_code', NOW())";
+		VALUES('$username', '$email','$password_hash', '$activation_code', NOW())";
 		if (mysqli_query($conn,$sql))
 		{
 			include 'Config/contact.php';
@@ -48,11 +47,11 @@
             $noidungthu = '<a href="http://localhost/cse485-website-project/admin/config/active.php?code='.$activation_code.'">Click Here</a>';
             $p = 'iammanh2612';
             $error = '';
-            $m -> sendMailFromLocalhost($emailsignup, $from, $tennguoigui="Error.vn", $tieudethu, $noidungthu, $from, $p, $error);
-            header("Location: login-register.php");
+            $m -> sendMailFromLocalhost($email, $from, $tennguoigui="Error.vn", $tieudethu, $noidungthu, $from, $p, $error);
+            header("Location: login.php");
             exit();
         }else{
-            header("Location: login-register.php#toregister");
+            header("Location: register.php");
             exit();
         }
 	}
