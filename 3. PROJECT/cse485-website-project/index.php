@@ -49,21 +49,23 @@
                 <div class="panel-body mt-3">
                     <div class="row-item row">
                         <div class="col-md-8 border-right">
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <a href="detail.php">
-                                        <img class="img-responsive" src="Assets/images/2.jpg" alt="">
-                                    </a>
-                                </div>
+                            <div class="noidung-index">
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <a href="detail.php">
+                                            <img class="img-responsive" src="Assets/images/2.jpg" alt="">
+                                        </a>
+                                    </div>
 
-                                <div class="col-md-7">
-                                    <h3>Sinh viên Khoa CNTT giao lưu với công ty Qualica Nhật Bản</h3>
-                                    <p class="tieude">Chiều 23/04/2018, tại Trường Đại học Thủy lợi diễn
-                                        ra buổi giao lưu giữa sinh viên Khoa CNTT với các lãnh đạo...</p>
-                                    <a href="detail.php">Xem thêm >></a>
+                                    <div class="col-md-7">
+                                        <a href="detail.php" class="title-index">Sinh viên Khoa CNTT giao lưu với công ty Qualica Nhật Bản</a>
+                                        <p class="tieude">Chiều 23/04/2018, tại Trường Đại học Thủy lợi diễn
+                                            ra buổi giao lưu giữa sinh viên Khoa CNTT với các lãnh đạo...</p>
+                                        <a href="detail.php">Xem thêm >></a>
+                                    </div>
                                 </div>
-                                <hr/>  
-                            </div>
+                                <hr />
+                            </div>                        
                         </div>
                         <div class="col-md-4">
                             <?php include 'Layouts/menu-right-index.php'; ?>
