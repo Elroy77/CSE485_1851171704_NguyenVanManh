@@ -4,10 +4,10 @@
 <?php include './Layouts/css-link.php'; ?>
 
 <body>
-    
-<?php include './Layouts/header.php'; ?>
 
-<?php include './Layouts/title-forum.php'; ?>
+    <?php include './Layouts/header.php'; ?>
+
+    <?php include './Layouts/title-forum.php'; ?>
 
     <section class="support_threads_area section--padding">
         <div class="container mt-3">
@@ -16,8 +16,7 @@
                     <div class="forum-container">
                         <div class="forum-questions-archive">
                             <form id="forum-search" class="forum-search shadow rounded">
-                                <input data-nonce="8c3dbe4be6" type="text" placeholder="Tìm kiếm ..." name="searchString" value=""
-                                    class="ui-autocomplete-input">
+                                <input data-nonce="8c3dbe4be6" type="text" placeholder="Tìm kiếm ..." name="searchString" value="" class="ui-autocomplete-input">
                             </form>
                             <div class="forum-question-filter shadow p-3 mb-3  rounded">
                                 <span>Lọc:</span>
@@ -30,11 +29,11 @@
                                     <option value="Views">Lượt xem</option>
                                 </select>
                             </div>
-                            <div class="forum-question-filter shadow p-3 mb-3  rounded"
-                                style="background-color: #3399FF; color: white;">
+                            <div class="forum-question-filter shadow p-3 mb-3  rounded" style="background-color: #3399FF; color: white;">
                                 <span>Danh sách các câu hỏi</span>
                             </div>
                             <?php include 'forum-index-process.php'; ?>
+<!-- 
                             <div class="forum-questions-footer">
                                 <div class="forum-pagination">
                                     <span class="forum-page-numbers forum-current">1</span>
@@ -45,15 +44,15 @@
                                     <a class="forum-next forum-page-numbers" href="#">Tiếp »</a>
                                 </div>
                             </div>
-
+                         -->
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-4">
                     <aside class="sidebar support--sidebar">
-                        <?php if(isset($_SESSION['username'])) { ?>
-                        <a href="forum-question-form.php" class="login_promot ">đăng câu hỏi</a>
+                        <?php if (isset($_SESSION['username'])) { ?>
+                            <a href="forum-question-form.php" class="login_promot ">đăng câu hỏi</a>
                         <?php } ?>
 
                         <?php include './Layouts/menu-right.php'; ?>

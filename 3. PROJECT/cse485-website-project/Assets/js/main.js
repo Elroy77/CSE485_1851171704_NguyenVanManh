@@ -64,6 +64,6 @@ $(document).ready(function () {
 
     effectContent = new TimelineMax()
     effectContent
-    .staggerFrom($('.noidung-index'),1,{y:-100,ease:Power4.easeOut ,opacity:0,delay:2},0.5)
+    .staggerFrom($('.noidung-index'),1,{y:-100,ease:Power4.easeOut ,opacity:0,delay:1},0.5)
 
 })

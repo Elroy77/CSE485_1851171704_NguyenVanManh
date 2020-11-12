@@ -10845,9 +10845,6 @@ span.slick-next {
 
 
 }
-.forum-container .forum-questions-archive .forum-questions-list:hover{
-    transform: scale(1.05);
-}
 
 .forum-container .forum-questions-archive .forum-questions-list .forum-question-item {
     padding: 30px 40px 30px 90px;
