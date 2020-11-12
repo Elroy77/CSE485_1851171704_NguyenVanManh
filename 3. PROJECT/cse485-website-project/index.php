@@ -49,16 +49,7 @@
                 <div class="panel-body mt-3">
                     <div class="row-item row">
                         <div class="col-md-8 border-right">
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <a href="detail.php">
-                                        <img class="img-responsive" src="Assets/images/2.jpg" alt="">
-                                    </a>
-                                </div>
-
-                                <?php include 'index-process.php'; ?>
-                                <hr/>  
-                            </div>
+                            <?php include 'index-process.php'; ?>
                         </div>
                         <div class="col-md-4">
                             <?php include 'Layouts/menu-right-index.php'; ?>

@@ -31,10 +31,6 @@
                                     <label>Xác định lại mật khẩu</label>
                                     <input type="password" name="comfirmPassword" class="text_field" placeholder="Nhập lại mật khẩu">
                                 </div>
-                                <div class="form-group">
-                                  <label>Avatar</label>
-                                  <input type="file" class="form-control-file" name="image">
-                                </div>
                                 <div style="display: flex; justify-content: center;">
                                     <button class="btn btn--md register_btn btn-primary" type="submit">Đăng kí</button>
                                 </div>

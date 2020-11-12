@@ -8,6 +8,6 @@
     $row = mysqli_fetch_array($result);
     if (mysqli_query($conn,$sql))
     {
-        header('location:forum-index.php');            
+        header('location:forum-index.php?');            
     }
 ?>

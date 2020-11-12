@@ -24,7 +24,7 @@
                 $rowCategory = mysqli_fetch_array($resultCategory);
                 echo $rowCategory['CategoryName'] ?></td>
             <td><?php echo $row['Contents'] ?></td>
-            <td></td>
+            <td><img src="Assets/images/<?php echo $row['Image']?>" alt=""></td>
             <td>
                 <?php
                     if($row['Status'] == '1') { echo "Kích hoạt";}   

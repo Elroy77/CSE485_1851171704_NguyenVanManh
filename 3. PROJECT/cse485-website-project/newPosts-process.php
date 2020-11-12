@@ -6,7 +6,7 @@
     while ($row = mysqli_fetch_array($result)) {
 ?>
 <div class="news-right">
-    <img class="img-thumbnail" src="Assets/images/1.jpg" height="50" width="150" alt="">
+    <img class="img-thumbnail" src="Admin/Assets/images/<?php echo $row['Image']?>" height="50" width="150" alt="">
     <a href="detail.php"><span><?php echo $row['Title'] ?></span></a>
 </div>
 <?php } ?>
