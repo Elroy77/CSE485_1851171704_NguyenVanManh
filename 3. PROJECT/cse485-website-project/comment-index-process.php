@@ -13,7 +13,7 @@
     </div>
     <div class="forum-answers-list">
     <?php
-        $sqlgetComment = "select DISTINCT comments.UserName,comments.Created,comments.Content from comments,questions where comments.Question_ID =".$_GET['id'];
+        $sqlgetComment = "SELECT DISTINCT comments.UserName,comments.Created,comments.Content FROM comments,questions WHERE comments.Question_ID =".$_GET['id'];
         $resultComment = mysqli_query($conn,$sqlgetComment);
         while($row = mysqli_fetch_assoc($resultComment))
         {?>

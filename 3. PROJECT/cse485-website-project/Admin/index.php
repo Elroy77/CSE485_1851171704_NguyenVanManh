@@ -12,12 +12,12 @@ if (!isset($_SESSION['username']) && $row['Role'] == 'admin') {
 }
 ?>
 
-<body>
+<body style="background-image: url(Assets/images/bgLogin.jpg)">
     <?php include '../Layouts/header-admin.php'; ?>
-    <div class="container">
+    <div class="container" >
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header text-center">Trang chủ</h1>
+                <h1 class="page-header text-center" style="margin-top:100px; color:white"></h1>
             </div>
         </div>
         <div class="row">

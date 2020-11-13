@@ -23,7 +23,7 @@ if (!isset($_SESSION['username'])) {
             <div class="col-lg-12">
                 <form role="form" method="post" action="question-category-edit-process.php">
                     <?php
-                    $sql = "select * from categoris_questions where ID = " . $_GET['ID'];
+                    $sql = "select * from categoris_questions where ID = " . $_GET['id'];
                     $result = mysqli_query($conn, $sql);
                     $row = mysqli_fetch_array($result);
                     ?>

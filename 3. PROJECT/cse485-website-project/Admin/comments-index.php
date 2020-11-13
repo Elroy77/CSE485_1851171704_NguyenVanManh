@@ -35,7 +35,6 @@ if (!isset($_SESSION['username'])) {
                     <tr>
                         <th>UserName</th>
                         <th>Content</th>
-                        <th>Question</th>
                         <th>Created</th>
                         <th>Delete</th>
                     </tr>

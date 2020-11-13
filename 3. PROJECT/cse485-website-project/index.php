@@ -13,7 +13,10 @@
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active" style="transition: 0.7s;">
-                            <img class="d-block w-100" style="height: 470px;" src="Assets/images/slide1.jpg" alt="First slide">
+                            <img class="d-block w-100" style="height: 470px;" src="Assets/images/slide0.jpg" alt="First slide">
+                        </div>
+                        <div class="carousel-item" style="transition: 0.7s;">
+                            <img class="d-block w-100" style="height: 470px;" src="Assets/images/slide1.jpg" alt="Second slide">
                         </div>
                         <div class="carousel-item" style="transition: 0.7s;">
                             <img class="d-block w-100" style="height: 470px;" src="Assets/images/slide2.jpg" alt="Second slide">

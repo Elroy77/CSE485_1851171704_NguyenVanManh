@@ -4,8 +4,8 @@
                 <img src="./Assets/images/small-logo.jpg" alt="">
                 <a href="https://www.facebook.com/cse.tlu.edu.vn" class="small-title pl-3 mt-3">Khoa công nghệ thông tin</a>
             </div>
-           <button class="btn btn-secondary liked-fanpage"><i class="fab fa-facebook pr-2"></i>Liked</button>
-           <button class="btn btn-secondary send-fanpage"><i class="fab fa-facebook-messenger pr-2"></i>Send Messenger</button>
+           <a href="https://www.facebook.com/cse.tlu.edu.vn" class="btn btn-secondary liked-fanpage"><i class="fab fa-facebook pr-2"></i>Liked</a>
+           <a href="https://www.facebook.com/cse.tlu.edu.vn" class="btn btn-secondary send-fanpage"><i class="fab fa-facebook-messenger pr-2"></i>Send Messenger</a>
        </div>
        <div class="sidebar-card card--forum_categories">
            <div class="card-title">

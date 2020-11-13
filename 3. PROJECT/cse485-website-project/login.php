@@ -9,6 +9,13 @@
             <div class="row">
                 <div class="col-lg-6 offset-lg-3">
                     <form action="login-process.php" id="login" method="POST">
+                    <?php
+                        include 'Config/config.php';
+                        $sql = "SELECT * FROM users";
+                        $result = mysqli_query($conn, $sql);
+                        $row = mysqli_num_rows($result); 
+                    ?>
+                    <input type="hidden" value="<?php if($row['Status'] == '1') {echo $row['Status'];} ?>" name="status">
                         <div class="cardify login">
                             <div class="login--header">
                                 <h3>Đăng nhập</h3>
