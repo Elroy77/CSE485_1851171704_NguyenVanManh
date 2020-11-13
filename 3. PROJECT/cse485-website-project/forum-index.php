@@ -25,7 +25,7 @@
                                     <option selected="" disabled="">Sắp xếp</option>
                                     <option value="Latest">Mới nhất</option>
                                     <option value="oldest">Cũ nhất</option>
-                                    <option value="like">Thích</option>
+                                    <option value="like">Trả lời</option>
                                     <option value="Views">Lượt xem</option>
                                 </select>
                             </div>
@@ -33,18 +33,7 @@
                                 <span>Danh sách các câu hỏi</span>
                             </div>
                             <?php include 'forum-index-process.php'; ?>
-<!-- 
-                            <div class="forum-questions-footer">
-                                <div class="forum-pagination">
-                                    <span class="forum-page-numbers forum-current">1</span>
-                                    <a class="forum-page-numbers" href="#">2</a>
-                                    <a class="forum-page-numbers" href="#">3</a>
-                                    <span class="forum-page-numbers forum-dots">…</span>
-                                    <a class="forum-page-numbers" href="#">5</a>
-                                    <a class="forum-next forum-page-numbers" href="#">Tiếp »</a>
-                                </div>
-                            </div>
-                         -->
+
                         </div>
                     </div>
                 </div>
