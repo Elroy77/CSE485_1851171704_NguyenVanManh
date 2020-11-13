@@ -12383,7 +12383,7 @@ span.slick-next {
     -webkit-box-orient: vertical;
 }
 .title-index{
-    font-size: 25px;
+    font-size: 22px;
     color: black;
     font-weight: 600;
 }
@@ -12399,7 +12399,7 @@ span.slick-next {
   }
   
 .fanpage .small-logo img {
-    z-index: 10;
+    z-index: 5;
     width: 7rem;
     height: 6rem;
     margin-top: 1rem;
@@ -12419,7 +12419,7 @@ span.slick-next {
   }
   
 .fanpage .liked-fanpage {
-    z-index: 10;
+    z-index: 5;
     position: absolute;
     bottom: 8%;
     left: 5%;
@@ -12428,7 +12428,7 @@ span.slick-next {
   }
   
 .fanpage .send-fanpage {
-    z-index: 10;
+    z-index: 5;
     position: absolute;
     bottom: 8%;
     right: 5%;

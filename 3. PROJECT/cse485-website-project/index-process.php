@@ -8,7 +8,7 @@ while ($row = mysqli_fetch_assoc($result)) { ?>
         <div class="row" style="margin-bottom:10px;">
             <div class="col-md-5">
                 <a href="detail.php?id=<?php echo $row['ID'] ?>">
-                    <img class="img-responsive" style="height: 170px; width: 300px" src="Admin/Assets/images/<?php echo $row['Image'] ?>" alt="">
+                    <img class="img-responsive" style="height: 160px; width: 300px; " src="Admin/Assets/images/<?php echo $row['Image'] ?>" alt="">
                 </a>
             </div>
 

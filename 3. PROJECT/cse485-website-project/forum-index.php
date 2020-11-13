@@ -18,20 +18,7 @@
                             <form id="forum-search" class="forum-search shadow rounded">
                                 <input data-nonce="8c3dbe4be6" type="text" placeholder="Tìm kiếm ..." name="searchString" value="" class="ui-autocomplete-input">
                             </form>
-                            <div class="forum-question-filter shadow p-3 mb-3  rounded">
-                                <span>Lọc:</span>
-                                <a href="forum-index.php" class="active">Tất cả</a>
-                                <select id="forum-sort-by" class="forum-sort-by" name="optionIndex">
-                                    <option selected="" disabled="">Sắp xếp</option>
-                                    <option value="Latest">Mới nhất</option>
-                                    <option value="oldest">Cũ nhất</option>
-                                    <option value="like">Trả lời</option>
-                                    <option value="Views">Lượt xem</option>
-                                </select>
-                            </div>
-                            <div class="forum-question-filter shadow p-3 mb-3  rounded" style="background-color: #3399FF; color: white;">
-                                <span>Danh sách các câu hỏi</span>
-                            </div>
+                            
                             <?php include 'forum-index-process.php'; ?>
 
                         </div>

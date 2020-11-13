@@ -69,13 +69,9 @@
                         <?php include 'Layouts/menu-right.php'; ?>
 
                     </aside>
-                    <!-- end .sidebar -->
                 </div>
-                <!-- end .col-lg-3 -->
             </div>
-            <!-- end .row -->
         </div>
-        <!-- end .container -->
     </section>
 
     <?php include 'Layouts/go-top.php'; ?>
@@ -83,7 +79,6 @@
     <?php include 'Layouts/footer.php'; ?>
 
 
-    <!-- endinject -->
 </body>
 
 </html>

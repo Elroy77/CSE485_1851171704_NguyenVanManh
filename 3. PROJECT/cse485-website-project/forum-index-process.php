@@ -1,27 +1,52 @@
 <?php
 include 'Config/config.php';
 error_reporting(0);
+// $param ="";
+$orderCondition ='';
+$orderField = isset($_GET['field']) ? $_GET['field'] : "";
+$orderSort = isset($_GET['sort']) ? $_GET['sort'] : "";
 $titleSearch = $_GET['searchString'];
-$optionIndex = $_GET['optionIndex'];
 $sotin1trang = 5;
-if (isset($_GET["trang"])) {
-    $trang = $_GET["trang"];
+if (isset($_GET["page"])) {
+    $trang = $_GET["page"];
     settype($trang, "int");
 } else {
     $trang = 1;
 }
+
+if(!empty($orderField) && !empty($orderSort)){
+    $orderCondition = " ORDER BY `questions`.`".$orderField."` ".$orderSort ;
+    // $param = "field=".$orderField."&sort=".$orderSort."&";
+}
+
+
 if (isset($titleSearch) && !empty($titleSearch)) {
     $sql = "select * from questions where Title like '%$titleSearch%'";
 } else {
     $from = ($trang - 1) * $sotin1trang;
-    $sql = "select * from questions limit $from, $sotin1trang";
+    $sql = "select * from questions ".$orderCondition." limit $from, $sotin1trang";
 }
-if ($optionIndex == 'oldest') {
-    $sql = "select * from questions order by Created DESC";
-}
+
 mysqli_set_charset($conn, "UTF8");
 $result = mysqli_query($conn, $sql);
+?>
+<div class="forum-question-filter shadow p-3 mb-3  rounded">
+    <span>Lọc:</span>
+    <a href="forum-index.php" class="active">Tất cả</a>
 
+    <select id="forum-sort-by" class="forum-sort-by" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value)">
+        <option selected="">Sắp xếp</option>
+        <option value="?field=Created&sort=desc">Mới nhất</option>
+        <option value="?field=Created&sort=asc">Cũ nhất</option>
+        <option value="?field=Views&sort=desc">Lượt xem</option>
+    </select>
+</div>
+
+
+<div class="forum-question-filter shadow p-3 mb-3  rounded" style="background-color: #3399FF; color: white;">
+    <span>Danh sách các câu hỏi</span>
+</div>
+<?php
 while ($row = mysqli_fetch_assoc($result)) { ?>
     <div class="noidung-index forum-questions-list shadow p-3 mb-3 bg-white rounded ">
         <div class="forum-question-item">
@@ -70,7 +95,7 @@ while ($row = mysqli_fetch_assoc($result)) { ?>
     $sotrang = ceil($tongsotin / $sotin1trang);
     for ($t = 1; $t <= $sotrang; $t++) { ?>
         <div class="forum-pagination">
-            <a class="forum-page-numbers " href='forum-index.php?trang=<?php echo $t ?>'><?php echo $t ?> </a>&nbsp;
+            <a class="forum-page-numbers " href='forum-index.php?page=<?php echo $t ?>'><?php echo $t ?> </a>&nbsp;
         </div>
     <?php }
 
