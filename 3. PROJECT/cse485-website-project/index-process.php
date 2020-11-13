@@ -17,14 +17,7 @@ while ($row = mysqli_fetch_assoc($result)) { ?>
                 <p class="tieude"><?php echo $row['Contents']; ?></p>
                 <a href="detail.php?id=<?php echo $row['ID'] ?>" name="ID">Xem thêm >></a>
             </div>
-
         </div>
-        
-        <div class="col-md-7">
-            <h3><?php echo $row['Title']; ?></h3>
-            <p class="tieude"><?php echo $row['Contents']; ?></p>
-            <a href="detail.php?id=<?php echo $row['ID'] ?>" name="ID">Xem thêm >></a>
-        </div>
-        <hr/>  
+        <hr>
     </div>
 <?php } ?>
