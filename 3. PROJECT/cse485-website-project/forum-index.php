@@ -18,7 +18,7 @@
                             <form id="forum-search" class="forum-search shadow rounded">
                                 <input data-nonce="8c3dbe4be6" type="text" placeholder="Tìm kiếm ..." name="searchString" value="" class="ui-autocomplete-input">
                             </form>
-                            
+
                             <?php include 'forum-index-process.php'; ?>
 
                         </div>
@@ -28,7 +28,7 @@
                 <div class="col-lg-4">
                     <aside class="sidebar support--sidebar">
                         <?php if (isset($_SESSION['username'])) { ?>
-                            <a href="forum-question-form.php" class="login_promot ">Đăng câu hỏi</a>
+                            <a href="forum-question-form.php" class="login_promot ">đăng câu hỏi</a>
                         <?php } ?>
 
                         <?php include './Layouts/menu-right.php'; ?>

@@ -15,7 +15,7 @@
                         <center>
                             <h1>Tạo câu hỏi</h1>
                         </center>
-                        <form action="forum-question-form-process.php" method="POST">
+                        <form action="forum-question-form-process.php" method="POST" enctype="multipart/form-data">
                             <input type="hidden" name="username" value="<?php echo $_SESSION['username'] ?>">
                             <div class="form-group">
                                 <label>Tiêu đề</label>
@@ -45,11 +45,11 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <div class="attachments">
+                                <div class="">
                                     <label>Tệp đính kèm</label>
                                     <label>
                                         <span class="icon-paper-clip"></span> Thêm ảnh
-                                        <input type="file" style="display:none;" name="image">
+                                        <input type="file" name="file">
                                     </label>
                                 </div>
                             </div>

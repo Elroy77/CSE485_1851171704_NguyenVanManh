@@ -36,7 +36,8 @@
                                     <p><?php echo $row['Contents'] ?>
                                     </p>
                                 </div>
-                                <img src="Upload/images/<?php echo $row['Image'] ?>" alt="">
+                                <br><br>
+                                <img src="Assets/images/<?php echo $row['Image'] ?>" alt="" style="">
                             </div>
 
                             <div class="forum-answers">

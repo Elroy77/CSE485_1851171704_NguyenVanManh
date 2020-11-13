@@ -2,8 +2,6 @@
 <html lang="en">
 
 <?php include 'Layouts/css-link.php';
-// if (!isset($_SESSION['username'])) {
-//     header('location:index.php');}
 ?>
 <body>
     <section class="login_area section--padding">
@@ -21,7 +19,7 @@
                                     <input type="text" name="username" class="text_field" placeholder="Nhập tài khoản">
                                 </div>
                                 <div class="form-group">
-                                    <label>Password</label>
+                                    <label>Mật khẩu</label>
                                     <input type="password" name="password" class="text_field" placeholder="Nhập mật khẩu">
                                 </div>
                                 </div>

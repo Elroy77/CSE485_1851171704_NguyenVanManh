@@ -67,6 +67,8 @@ while ($row = mysqli_fetch_assoc($result)) { ?>
             </div>
             <div class="forum-question-meta mt-3">
                 <a class="forum-keyword">Sinh viên</a>
+                <a class="forum-keyword">Hỏi đáp</a>
+                <a class="forum-keyword">Trao đổi</a>
             </div>
             <div class="forum-question-stats">
                 <span class="forum-views-count">

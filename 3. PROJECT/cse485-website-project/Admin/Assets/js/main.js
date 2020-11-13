@@ -13,7 +13,7 @@ $(document).ready(function () {
     });
     $("#register").validate({
         rules: {
-            username: "required",
+            name: "required",
             email: {
               required: true,
               email: true
@@ -29,7 +29,7 @@ $(document).ready(function () {
           },
       
           messages: {
-            username: "Vui lòng nhập họ tên",
+            name: "Vui lòng nhập họ tên",
             email: "Vui lòng nhập email",
             password: {
               required: "Vui lòng nhập mật khẩu",
