@@ -41,7 +41,7 @@
                 <div class="col-lg-4">
                     <aside class="sidebar support--sidebar">
                         <?php if (isset($_SESSION['username'])) { ?>
-                            <a href="forum-question-form.php" class="login_promot ">đăng câu hỏi</a>
+                            <a href="forum-question-form.php" class="login_promot ">Đăng câu hỏi</a>
                         <?php } ?>
 
                         <?php include './Layouts/menu-right.php'; ?>
